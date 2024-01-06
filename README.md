@@ -25,14 +25,14 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop](./screenshots/desktop.png)
-![tablet](./screenshots/tablet.png)
-![mobile](./screenshots/mobile.png)
+|Desktop|Tablet|Mobile|
+|--|--|--|
+|<img src="./screenshots/desktop.png" width="400"/>|<img src="./screenshots/tablet.png" width="200"/>|<img src="./screenshots/mobile.png" width="100">|
 
 ### Links
 
 - Solution URL: [Frontend Mentor solution page](https://your-solution-url.com)
-- Live Site URL: [Github Page](https://your-live-site-url.com)
+- Live Site URL: [Github Page](https://kosmonavtsv.github.io/workit-landing-page)
 
 ## My process
 
