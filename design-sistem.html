@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="font-body">
+    <div
+      class="container bg-white grid"
+      style="
+        padding-top: 1rem;
+        row-gap: 6.25rem;
+        padding-inline: 2rem;
+        margin-inline: auto;
+        max-width: 80rem;
+      "
+    >
+      <header
+        class="flex"
+        style="justify-content: space-between; align-items: center"
+      >
+        <h1><img src="assets/images/logo-dark.svg" /></h1>
+        <span>Design system</span>
+      </header>
+      <main class="grid" style="row-gap: 6.25rem">
+        <section id="colors" style="min-height: calc(100vh - 12rem)">
+          <h2 class="font-heading-s" style="margin-bottom: 3.5rem">
+            <span>1</span> Colors
+          </h2>
+
+          <!-- 
+            Auto-Sizing Columns in CSS Grid: `auto-fill` vs `auto-fit`
+            https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ 
+          -->
+          <div
+            class="grid"
+            style="
+              grid-template-columns: repeat(
+                auto-fit,
+                minmax(min(21.875rem, 100%), 1fr)
+              );
+              row-gap: 3.5rem;
+            "
+          >
+            <div>
+              <div
+                class="bg-dark-purple clr-white fw-700"
+                style="padding: 0.5rem 1rem; height: 6.25rem"
+              >
+                #24053E
+              </div>
+              <p
+                class="grid"
+                style="
+                  grid-template-columns: 5.9425rem 1fr;
+                  row-gap: 0.25rem;
+                  margin-top: 0.5rem;
+                "
+              >
+                <span>RGB</span>
+                <span class="clr-dark-purple fw-700">36, 5, 62</span>
+                <span>HSL</span>
+                <span class="clr-dark-purple fw-700">273°, 85%, 13%</span>
+              </p>
+            </div>
+
+            <div>
+              <div
+                class="bg-light-green clr-dark-purple fw-700"
+                style="padding: 0.5rem 1rem; height: 6.25rem"
+              >
+                #44FFA1
+              </div>
+              <p
+                class="grid"
+                style="
+                  grid-template-columns: 5.9425rem 1fr;
+                  row-gap: 0.25rem;
+                  margin-top: 0.5rem;
+                "
+              >
+                <span>RGB</span>
+                <span class="clr-dark-purple fw-700">68, 255, 161</span>
+                <span>HSL</span>
+                <span class="clr-dark-purple fw-700">150°, 100%, 63%</span>
+              </p>
+            </div>
+
+            <div>
+              <div
+                class="bg-grey clr-white fw-700"
+                style="padding: 0.5rem 1rem; height: 6.25rem"
+              >
+                #584D62
+              </div>
+              <p
+                class="grid"
+                style="
+                  grid-template-columns: 5.9425rem 1fr;
+                  row-gap: 0.25rem;
+                  margin-top: 0.5rem;
+                "
+              >
+                <span>RGB</span>
+                <span class="clr-dark-purple fw-700">88, 77, 98</span>
+                <span>HSL</span>
+                <span class="clr-dark-purple fw-700">271°, 12%, 34%</span>
+              </p>
+            </div>
+
+            <div>
+              <div
+                class="bg-ghost-white clr-dark-purple fw-700"
+                style="padding: 0.5rem 1rem; height: 6.25rem"
+              >
+                #FCF8FF
+              </div>
+              <p
+                class="grid"
+                style="
+                  grid-template-columns: 5.9425rem 1fr;
+                  row-gap: 0.25rem;
+                  margin-top: 0.5rem;
+                "
+              >
+                <span>RGB</span>
+                <span class="clr-dark-purple fw-700">253, 250, 255</span>
+                <span>HSL</span>
+                <span class="clr-dark-purple fw-700">276°, 100%, 99%</span>
+              </p>
+            </div>
+
+            <div>
+              <div
+                class="bg-white clr-dark-purple"
+                style="
+                  padding: 0.5rem 1rem;
+                  height: 6.25rem;
+                  border: 1px solid hsl(var(--clr-grey));
+                "
+              >
+                #FFFFFF
+              </div>
+              <p
+                class="grid"
+                style="
+                  grid-template-columns: 5.9425rem 1fr;
+                  row-gap: 0.25rem;
+                  margin-top: 0.5rem;
+                "
+              >
+                <span>RGB</span>
+                <span class="clr-dark-purple fw-700">255, 255, 255</span>
+                <span>HSL</span>
+                <span class="clr-dark-purple fw-700">0, 0%, 100%</span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="min-h-full" style="min-height: 100vh;" id="typography">
+          <h2 class="font-heading-s" style="margin-bottom: 3.5rem">
+            2 Typography
+          </h2>
+          <div
+            class="grid"
+            style="
+              grid-template-columns: 1fr 1fr;
+              grid-template-rows: repeat(3, min-content);
+              column-gap: 3.94rem;
+              row-gap: 2.5rem;
+            "
+          >
+            <div>
+              <div
+                class="flex"
+                style="
+                  column-gap: 1.5rem;
+                  flex-wrap: wrap;
+                  margin-bottom: 1.5rem;
+                "
+              >
+                <span style="font-weight: 700">Heading L</span>
+                <span>Fraunces 144</span>
+                <span>Semi Bold</span>
+                <span>80px</span>
+                <span>80px Line Spacing</span>
+              </div>
+              <p class="font-heading-l">Lorem ipsum dolor sit amet</p>
+            </div>
+            <div style="grid-column: 2 / span 1; grid-row: 1 / span 3">
+              <div
+                class="flex"
+                style="
+                  column-gap: 1.5rem;
+                  flex-wrap: wrap;
+                  margin-bottom: 1.5rem;
+                "
+              >
+                <span style="font-weight: 700">Body</span>
+                <span>Manrope</span>
+                <span>Regular</span>
+                <span>18px</span>
+                <span>32px Line Spacing</span>
+              </div>
+              Sed egestas, ante et vulputate volutpat, eros pede semper est,
+              vitae luctus metus libero eu augue. Morbi purus libero, faucibus
+              adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent
+              elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum
+              volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu
+              pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu,
+              fermentum et, dapibus sed, urna. Morbi interdum mollis sapien. Sed
+              ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus
+              arcu pulvinar risus, vitae facilisis libero dolor a purus.
+            </div>
+            <div>
+              <div
+                class="flex"
+                style="
+                  column-gap: 1.5rem;
+                  flex-wrap: wrap;
+                  margin-bottom: 1.5rem;
+                "
+              >
+                <span style="font-weight: 700">Heading M</span>
+                <span>Fraunces 144</span>
+                <span>Semi Bold</span>
+                <span>56px</span>
+                <span>64px Line Spacing</span>
+              </div>
+              <p class="font-heading-m">Morbi in sem quis dui</p>
+            </div>
+            <div>
+              <div
+                class="flex"
+                style="
+                  column-gap: 1.5rem;
+                  flex-wrap: wrap;
+                  margin-bottom: 1.5rem;
+                "
+              >
+                <span style="font-weight: 700">Heading S</span>
+                <span>Fraunces 144</span>
+                <span>Semi Bold</span>
+                <span>32px</span>
+                <span>40px Line Spacing</span>
+              </div>
+              <p class="font-heading-s">
+                Phasellus ultrices nulla vulputate sem
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="min-h-full" style="min-height: 100vh;">
+          <h2 class="font-heading-s" style="margin-bottom: 3.5rem">
+            3 Buttons
+          </h2>
+          <div
+            class="grid bg-dark-purple"
+            style="
+              grid-template-columns: repeat(2, minmax(25rem, 1fr));
+              justify-items: center;
+              padding: 4.75rem 0;
+            "
+          >
+            <div>
+              <div style="text-align: center">
+                <a href="#" class="btn btn-primary">Apply for access</a>
+                <p
+                  class="clr-white"
+                  style="margin-top: 1rem; opacity: 0.5; font-size: 1.125rem"
+                >
+                  Primary Default
+                </p>
+              </div>
+              <div style="text-align: center; margin-top: 3.5rem">
+                <a href="#" class="btn btn-primary btn--hover">
+                  Apply for access
+                </a>
+                <p
+                  class="clr-white"
+                  style="margin-top: 1rem; opacity: 0.5; font-size: 1.125rem"
+                >
+                  Primary Hover
+                </p>
+              </div>
+            </div>
+            <div>
+              <div style="text-align: center">
+                <div
+                  style="
+                    padding: var(--btn-primary-padding);
+                    border: var(--btn-primary-border-width) solid transparent;
+                    margin-bottom: -3px;
+                  "
+                >
+                  <a href="#" class="btn btn-secondary">Apply for access</a>
+                </div>
+                <p
+                  class="clr-white"
+                  style="margin-top: 1rem; opacity: 0.5; font-size: 1.125rem"
+                >
+                  Secondary Default
+                </p>
+              </div>
+              <div style="text-align: center; margin-top: 3.5rem">
+                <div
+                  style="
+                    padding: var(--btn-primary-padding);
+                    border: var(--btn-primary-border-width) solid transparent;
+                    margin-bottom: -3px;
+                  "
+                >
+                  <a href="#" class="btn btn-secondary btn--hover">
+                    Apply for access
+                  </a>
+                </div>
+                <p
+                  class="clr-white"
+                  style="margin-top: 1rem; opacity: 0.5; font-size: 1.125rem"
+                >
+                  Secondary Hover
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
