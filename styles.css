@@ -482,7 +482,9 @@ body {
     --fs-heading-s: 2rem;
     --fs-body: 1.125rem;
 
-    --page-max-width: 69rem;
+    --page-inline-padding:3rem;
+    --content-inline-padding:3rem;
+    --page-max-width: 72rem;
 
     --btn-fs: 1.125rem;
     --btn-primary-padding: 1rem 2rem;
