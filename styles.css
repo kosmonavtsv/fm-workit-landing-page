@@ -302,6 +302,12 @@ body {
   transform: translateY(calc(100% - clamp(30%, 10vw, 70%)));
 }
 
+.pattern-1,
+.pattern-2,
+.pattern-3 {
+  pointer-events: none;
+}
+
 .main-header section {
   padding-top: 4rem;
   gap: 2.5rem;
@@ -385,6 +391,15 @@ body {
 
 .main-footer__socials {
   justify-content: space-between;
+}
+
+.main-footer__socials > img {
+  cursor: pointer;
+}
+
+.main-footer__socials > img:hover,
+.main-footer__socials > img:focus {
+  filter: contrast(200%);
 }
 /* #endregion */
 
@@ -482,8 +497,8 @@ body {
     --fs-heading-s: 2rem;
     --fs-body: 1.125rem;
 
-    --page-inline-padding:3rem;
-    --content-inline-padding:3rem;
+    --page-inline-padding: 3rem;
+    --content-inline-padding: 3rem;
     --page-max-width: 72rem;
 
     --btn-fs: 1.125rem;
