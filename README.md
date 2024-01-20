@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor solution page](https://your-solution-url.com)
+- Solution URL: [frontendmentor.io](https://www.frontendmentor.io/solutions/workit-landing-page-clippath-grid-grC-8IOa0S)
 - Live Site URL: [Github Page](https://kosmonavtsv.github.io/fm-workit-landing-page)
 
 ## My process
