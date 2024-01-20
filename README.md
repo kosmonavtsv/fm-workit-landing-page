@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor solution page](https://your-solution-url.com)
-- Live Site URL: [Github Page](https://kosmonavtsv.github.io/workit-landing-page)
+- Live Site URL: [Github Page](https://kosmonavtsv.github.io/fm-workit-landing-page)
 
 ## My process
 
